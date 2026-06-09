@@ -1,0 +1,5 @@
+{
+  "ndcg_5": 0.5196,
+  "precision_5": 0.2292,
+  "candidates_evaluated": 96
+}

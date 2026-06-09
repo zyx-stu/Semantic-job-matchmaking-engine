@@ -1,0 +1,53 @@
+# ============================================================
+# Semantic Job Matchmaking Engine — .gitignore
+# ============================================================
+
+# --------------- Python ---------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# --------------- Virtual Environment --------
+venv/
+env/
+.venv/
+.env/
+
+# --------------- IDE / Editor ---------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# --------------- Data & Artifacts -----------
+# Raw/processed CSVs too large for GitHub (regenerable)
+data/jobs.csv
+data/clean_jobs.csv
+data/jobs_processed.csv
+
+# Embeddings (binary, regenerable)
+embeddings/*.npy
+
+# FAISS index (binary, regenerable)
+index/*.faiss
+
+# Kaggle working directory artefacts
+*.npy
+*.faiss
+jobs_processed.csv
+clean_jobs.csv
+
+# --------------- Jupyter --------------------
+.ipynb_checkpoints/
+
+# --------------- Misc -----------------------
+*.log
+.kaggle/
